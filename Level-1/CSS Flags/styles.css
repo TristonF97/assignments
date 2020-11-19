@@ -1,0 +1,212 @@
+.france {
+    position: absolute;
+    background-color: #002495;
+    height: 300px;
+    width: 450px;
+    border-style: solid;
+}
+
+.franceWhite {
+    position: absolute;
+    left: 150px;
+    height: 300px;
+    width: 150px;
+    background-color:#FFFFFF;
+}
+
+.franceRed {
+    position: absolute;
+    left: 300px;
+    height: 300px;
+    width: 150px;
+    background-color:#ED2938;
+}
+
+.germany {
+    position: absolute;
+    top: 350px;
+    height: 300px;
+    width: 500px;
+    background-color: #000000;
+    border-style: solid;
+}
+
+.germanyRed {
+    position: absolute;
+    top: 100px;
+    height: 100px;
+    width: 500px;
+    background-color:#DE0002;
+}
+
+.germanyYellow {
+    position: absolute;
+    top: 200px;
+    height: 100px;
+    width: 500px;
+    background-color: #FFCE00;
+}
+
+.madagascar {
+    position: absolute;
+    top: 700px;
+    height: 300px;
+    width: 450px;
+    background-color: #FFFFFF;
+    border-style: solid;
+}
+
+.madRed {
+    position: absolute;
+    left: 150px;
+    height: 150px;
+    width: 300px;
+    background-color: #FC3E32;
+}
+
+.madGreen {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    height: 150px;
+    width: 300px;
+    background-color: #007E39;
+}
+
+.switzerland {
+    position: absolute;
+    top: 1050px;
+    height: 300px;
+    width: 300px;
+    background-color: #FF0002;
+    border-style: solid;
+}
+
+.switzCross1 {
+    position: absolute;
+    top: 75px;
+    left: 125px;
+    height: 150px;
+    width: 50px;
+    background-color: #FFFFFF;
+}
+
+.switzCross2 {
+    position: absolute;
+    top: 125px;
+    left: 75px;
+    height: 50px;
+    width: 150px;
+    background-color: #FFFFFF;
+}
+
+.sweden {
+    position: absolute;
+    top: 1400px;
+    height: 300px;
+    width: 480px;
+    background-color: #0269A6;
+    border-style: solid;
+}
+
+.swedeLineDown {
+    position: absolute;
+    left: 125px;
+    height: 300px;
+    width: 75px;
+    background-color: #FECC00;
+}
+
+.swedeLineAccross {
+    position: absolute;
+    top: 125px;
+    height: 75px;
+    width: 480px;
+    background-color: #FECC00;
+}
+
+.gambia {
+    position: absolute;
+    top: 1750px;
+    height: 300px;
+    width: 450px;
+    background-color: #FFFFFF;
+    border-style: solid;
+}
+
+.gambiaRed {
+    position: absolute;
+    height: 100px;
+    width: 450px;
+    background-color: #CE1127;
+}
+
+.gambiaBlue {
+    position: absolute;
+    top: 115px;
+    height: 70px;
+    width: 450px;
+    background-color: #0D1D8B;
+}
+
+.gambiaGreen {
+    position: absolute;
+    top: 200px;
+    height: 100px;
+    width: 450px;
+    background-color: #3B7827;
+}
+
+.japan {
+    position: absolute;
+    top: 2100px;
+    height: 300px;
+    width: 450px;
+    background-color: #FFFFFF;
+    border-style: solid;
+}
+
+.japanCircle {
+    position: absolute;
+    top: 115px;
+    left: 170px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #BC022C;
+}
+
+.niger {
+    position: absolute;
+    top: 2450px;
+    height: 450px;
+    width: 525px;
+    background-color: #E15307;
+    border-style: solid;
+}
+
+.nigerWhite {
+    position: absolute;
+    top: 150px;
+    height: 150px;
+    width: 525px;
+    background-color: #FFFFFF;
+}
+
+.nigerGreen {
+    position: absolute;
+    top: 300px;
+    height: 150px;
+    width: 525px;
+    background-color: #10AF2A;
+}
+
+.nigerCircle {
+    position: absolute;
+    top: 175px;
+    left: 200px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #E15307;
+}

@@ -1,0 +1,18 @@
+body {
+    background-image: url("https://i.dailymail.co.uk/i/pix/2017/04/06/11/3F006CA900000578-0-image-a-21_1491475782242.jpg");
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+}
+
+h2 {
+    color:yellow;
+    font-size: 35px;
+}
+
+
+.buttons {
+    border-style: groove;
+}

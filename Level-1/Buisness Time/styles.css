@@ -1,0 +1,161 @@
+
+
+
+body {
+        background-image: url(https://wallpapertag.com/wallpaper/full/4/e/7/354646-vertical-comic-book-background-1920x1080-for-mobile.jpg);
+    }
+    
+    .title {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(39, 39, 214, 0.747);
+        height: 125px;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 10px;
+        background-color: rgb(128, 184, 202);
+        height: 25px;
+    }
+    
+    .aside {
+        display: inline;
+        position: absolute;
+        right: 5px;
+        top: 250px;
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 10px;
+        border: 5px solid black;
+        padding: 5px;
+        width: 300px;
+        height: 400px;
+        background-color: lightgrey;
+    }
+    
+    .section {
+        font-size: 25px;
+        width: 700px;
+        height: 625px;
+        line-height: 1.6;
+        border: solid black;
+        margin: 5px;
+        padding: 10px;
+        background-color: lightgrey;
+    }
+    
+    .comics {
+        position: absolute;
+        left: 850px;
+        top: 300px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        height: 50px;
+        border: solid black;
+        background-color: lightgrey;
+    }
+    
+    .mando {
+        display: block;
+    }
+    
+    .nc-contact {
+        height: 75px;
+        width: 100%;
+        background-color: darkgrey;
+        border-bottom: solid black;
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX29529656.jpg);
+    }
+    
+    .title {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(39, 39, 214, 0.747);
+        height: 125px;
+    }
+    
+        
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 10px;
+        background-color: rgb(128, 184, 202);
+        height: 25px;
+    }
+    
+    .section {
+        font-size: 25px;
+        width: 700px;
+        height: 425px;
+        line-height: 1.6;
+        border: solid black;
+        margin: 5px;
+        padding: 10px;
+        background-color: lightgrey;
+    }
+    
+    .aside {
+        display: inline;
+        position: absolute;
+        left: 100px;
+        top: 700px;
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 10px;
+        border: 5px solid black;
+        padding: 5px;
+        width: 500px;
+        height: 250px;
+        background-color: lightgrey;
+    }
+    
+    .footer {
+        position: absolute;
+        top: 1000px;
+        left: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        height: 50px;
+        border: solid black;
+        background-color: lightgrey;
+    }
+    
+    .comics {
+        position: absolute;
+        left: 55px;
+        top: 1055px;
+        margin: 20px;
+    }
+}
