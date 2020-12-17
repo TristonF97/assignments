@@ -1,0 +1,26 @@
+Console must greet player with a fun message: Check
+
+Console must ask for the player's name and store it: Check
+
+The console will ask the user to enter a "w" to walk: Check
+
+Every time the player walks, a random algorithm will be run that determines if a wild enemy has appeared: Check
+
+The enemy is random: Check
+
+The user can decide to attack or run: Check
+
+If attacking, a random amount of damage will be delt between a min and max: Check
+
+If running, there will be a 50% chance of escaping: Check
+
+After the player attacks or runs the enemy attacks back for a random damage amount: Check
+
+If the player kills the enemy you can give the Player some HP and a special item that is stored in the inventory: Check
+After this, the player will continue walking. Use a while loop to control this flow: Check
+
+If the enemy kills the player the console prints a cool death message and the game ends: Check
+
+When the player kills enemies, they are awarded with items: Check
+
+If the user enters 'Print' or 'p' in the console, the console will print the players name, HP, and each item in their inventory: Check

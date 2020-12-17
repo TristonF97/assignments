@@ -11,19 +11,24 @@ function largestNumber(largest) {
 console.log(largestNumber(array))
 
 
-const hero = ["Batman", "Superman", "The Hulk"]
+const hero = ["Batman", "Superman", "The Hulk", "The Flash", "Nightwing"]
+const heroesWithA = []
 function lettersAndWords(find) {
-    const letter = "a";
-    for (var i = 0; i < find.length; i++) {
-        if (find[i] == letter) {
-            console.log("its working")
-        }
+    for (var i = 0; i < hero.length; i++) {
+        if (hero[i].includes("a"))
+        heroesWithA.push(hero[i])
     }
-    return letter;
+    return heroesWithA;
 }
-console.log(lettersAndWords(hero))
+console.log(lettersAndWords(heroesWithA))
 
 
 function divisible(num1, num2) {
-
+    if (num1 % num2 != 0){
+        return false
+    } else
+    return true
 }
+console.log(divisible(4, 2))
+console.log(divisible(9, 3))
+console.log(divisible(15, 4))
