@@ -34,7 +34,7 @@ function battleLoop(enemy) {
             readline.keyInPause("You land a critical attack on the " + enemy.name + " and they collapse!")
         }
         if (enemy.hp > 0) {
-            readline.keyInPause("The " + enemy.name + " is fast and catches you off guard! You are hit for " + enemyAttack + " Your hp is now: " + player.hp)
+            readline.keyInPause("The " + enemy.name + " is fast and breaks your defences! You are hit for " + enemyAttack + " Your hp is now: " + player.hp)
         }
         console.clear();
     }

@@ -1,7 +1,7 @@
 const readlineSync = require("readline-sync");
 
 const name = readlineSync.question("What is your name? ");
-console.log (name + ", you wake up in the middle of a small room.\nYou see a door in the north wall of the room,\nand a fist sized hole in the south wall.")
+console.log (name + ", you wake up in the middle of a small room.\nYou see a door along one wall of the room,\nand a fist sized hole in the opposite wall.")
 
 options = ["Put hand in hole", "Find the key", "Open the door"]
 index = readlineSync.keyInSelect(options, "What will you do?");

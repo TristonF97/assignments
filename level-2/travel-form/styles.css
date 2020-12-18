@@ -1,0 +1,14 @@
+body {
+    background-color:navy;
+}
+
+.travel-form {
+    padding: 10px;
+    border: 2px solid black;
+    width: 400px;
+    position: relative;
+    top: 300px;
+    left: 700px;
+    background-color: teal;
+    color: navy;
+}

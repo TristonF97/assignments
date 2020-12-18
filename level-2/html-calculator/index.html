@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>HTML Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="header">HTML Calculator</h1>
+
+    <div class="addition">
+        <form name="add">
+            <input type="number" name="add1"/>
+            <span>+</span>
+            <input type="number" name="add2"/>
+            <button> Add </button>
+        </form>
+    </div>
+
+    <div class="subtraction">
+        <form name="subtract">
+            <input type="number" name="sub1"/>
+            <span>-</span>
+            <input type="number" name="sub2"/>
+            <button> Subtract </button>
+        </form>
+    </div>
+
+    <div class="multiplication">
+        <form name="multiply">
+            <input type="number" name="mul1"/>
+            <span>x</span>
+            <input type="number" name="mul2"/>
+            <button> Multiply </button>
+        </form>
+    </div>
+
+    <div id="answer"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
