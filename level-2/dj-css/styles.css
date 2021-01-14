@@ -1,0 +1,50 @@
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: black;
+}
+
+#box1:hover {
+    background-color: red;
+    box-shadow: 5px 10px black;
+    width: 300px;
+    height: 300px;
+    transition: all 1s linear;
+}
+
+#box2:hover {
+    height: 200px;
+    opacity: 30%;
+    margin: 50px;
+    transition: all .5s linear;
+}
+
+#box3:hover {
+    width: 200px;
+    line-height: 150px;
+    text-align: center;
+    color: white;
+    transition: all 1s linear;
+}
+
+#box4:hover {
+    border-radius: 100px;
+    background-color: rgb(8, 83, 8);
+    transition: all 1.5s linear;
+}
+
+#box5:hover {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(16, 88, 88);
+    transition: all 2.5s linear;
+}
+
+#box6:hover {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 25px solid black;
+    transition: all 3s linear;
+}
