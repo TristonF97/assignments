@@ -1,0 +1,76 @@
+{
+    "appetizers": [
+        {
+            "name": "Chips and Dip",
+            "ingredients": ["olive oil", "corn tortillas", "salt", "tomatoes", "green chilies", "garlic", "onion"],
+            "description": "Extra-thin authentic corn tostada chips made fresh daily. Served with freshly made salsa."
+        },
+        {
+            "name": "Cheese Bread",
+            "ingredients": ["corn flour", "eggs", "salt", "butter", "sugar", "garlic powder", "cheddar cheese cheese"],
+            "description": "Cheese and bread. It’s obviously the greatest loaf of all time."
+        },
+        {
+            "name": "Salad",
+            "ingredients": ["carrots", "lettuce", "onions", "ranch dressing"],
+            "description": "A tasty classic salad with a side of ranch dressing."
+        }
+    ],
+
+    "cold sandwiches": [
+        {
+            "name": "Turkey",
+            "ingredients": ["turkey", "mayonaise", "provolone cheese", "cheddar cheese", "american cheese", "colby jack cheese"],
+            "description": "The owners favorite. Delcious thin sliced turkey along side your choice of cheese."
+        },
+        {
+            "name": "Ham",
+            "ingredients": ["ham", "mayonaise", "provolone cheese", "cheddar cheese", "american cheese", "colby jack cheese"],
+            "description": "The owners other favorite. Delcious thin sliced ham along side your choice of cheese."
+        }
+    ],
+
+    "hot sandwiches": [
+        {
+            "name": "Grilled Cheese",
+            "ingredients": ["bread", "butter", "provolone cheese", "cheddar cheese", "american cheese", "colby jack cheese"],
+            "description": "Two slices of toasted bread covering your choice of delicious cheese."
+        },
+        {
+            "name": "Philly Cheesesteak",
+            "ingredients": ["beef roast", "worcestershire sauce", "american cheese cheese"],
+            "description": "Our number one voted dish. It doesn't get better than this."
+        }
+    ],
+
+    "deserts": [
+        {
+            "name": "Ice Cream",
+            "ingredients": ["milk", "cream", "sugar", "cocoa", "vanilla"],
+            "description": "A tasty sweet chilled classic. With choices of chocolate, vanilla, or mixed."
+        },
+        {
+            "name": "Pie",
+            "ingredients": ["egg whites", "brown sugar", "sugar", "cinnamon", "lemon juice", "pumpkin", "lime"],
+            "description": "A warm baked treat that will have your mouth watering for more. We've got apple, pumpkin, and key-lime pie"
+        }
+    ],
+
+    "drinks": [
+        {
+            "name": "Mountain Dew",
+            "ingredients": ["high-fructiose corn syrup", "corbonated water", "concentrated orange juice", "caffeine"],
+            "description": "Mountain Dew, the original instigator, refreshes with its one of a kind great taste."
+        },
+        {
+            "name": "Dr. Pepper",
+            "ingredients": ["high-fructiose corn syrup", "corbonated water", "caramel color", "caffeine"],
+            "description": "As authentic as a vintage 'I'm a Pepper®' tee, Dr Pepper is always original. A signature blend of 23 flavors makes every sip of Dr Pepper truly unique. There's nothing like a Dr Pepper."
+        },
+        {
+            "name": "Water",
+            "ingredients": ["water"],
+            "description": "Its... water"
+        }
+    ]
+}
