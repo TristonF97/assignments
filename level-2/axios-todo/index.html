@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <div class="page-title">
+        <h1>TO-DO LIST</h1>
+    </div>
+
+    <div class="form-container">
+        <form name="form" class="form">
+            <input type="text" name="title" placeholder="Title"/>
+            <br>
+            <input type="text" name="description" placeholder="Description"/>
+            <br>
+            <input type="text" name="price" placeholder="Price"/>
+            <br>
+            <input type="text" name="imgUrl" placeholder="imgUrl"/>
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div class="todo-list">
+        <div id="madeTodos"></div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>

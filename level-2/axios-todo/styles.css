@@ -1,0 +1,28 @@
+html {
+    min-height: 100%;
+    background-image: linear-gradient(to bottom right, #00203FFF, #ADEFD1FF); 
+}
+
+.page-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.formDivider {
+    border-bottom: solid 2px black;
+    margin: 15px;
+}
+
+.form {
+    text-align: center;
+}
+
+.todo-list {
+    text-align: center;
+    /* background-image: linear-gradient(to top left, #00203FFF, #ADEFD1FF); */
+}
+
+.divider {
+    border-bottom: solid 5px rgb(3, 58, 112);
+    margin: 15px;
+}
