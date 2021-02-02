@@ -1,0 +1,24 @@
+body {
+    background-color: #606060FF
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.dice-box {
+    margin: 50px 450px 50px 450px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, auto);
+    grid-row: 2;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: #087099;
+}
+
+.button {
+    grid-column: 3 / 4;
+    grid-row: 3;
+}

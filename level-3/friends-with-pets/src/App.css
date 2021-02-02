@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+.petStyles {
+    border: 1px solid black;
+    color: white;
+    background-color: #087099;
+}

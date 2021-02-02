@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.header {
+    color: white;
+    background-color: #212529;
+    text-align: center;
+    height: 530px;
+}
+
+.header::before {
+    content: "";
+    background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog/img/home-bg.jpg");
+    background-position: center;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 530px;
+    width: 100%;
+}
+
+.navStyle {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    font-size: 14px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 125px;
+    font-size: 80px;
+}
+
+.subTitle {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.blogBody {
+    display: grid;
+    margin: 30px 30% 10px 30%;
+}
+
+.blogTitle {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.blogTitle:hover {
+    color: #0085a1;
+    transition: all .5s;
+}
+
+.blogSubtitle {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.blogSubtitle:hover {
+    color: #0085a1;
+    transition: all .5s;
+}
+
+.postedBy {
+    font-family: Lora,'Times New Roman',serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #868e96;
+}
+
+.blogAuthor {
+    font-family: Lora,'Times New Roman',serif;
+}
+
+.blogAuthor:hover {
+    color: #0085a1;
+    text-decoration: underline;
+    transition: all .5s;
+}
+
+.blogDate {
+    font-family: Lora,'Times New Roman',serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #868e96;
+}
+
+.button {
+    position: relative;
+    left: 582px;
+    text-align: center;
+    vertical-align: 50%;
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    background-color: #0085a1;
+    padding: 15px 25px;
+    width: 17%;
+}
+
+.button:hover {
+    background-color: #09677a;
+    transition: all .5s;
+}
+
+.footer {
+    text-align: center;
+    font-family: Lora,'Times New Roman',serif;
+    margin: 75px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 675px;
+    width: 300px;
+    margin: 25px;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.twitter:hover {
+    color: #0085a1;
+    transition: all .5s;
+}
+
+.facebook:hover {
+    color: #0085a1;
+    transition: all .5s;
+}
+
+.github:hover {
+    color: #0085a1;
+    transition: all .5s;
+}
