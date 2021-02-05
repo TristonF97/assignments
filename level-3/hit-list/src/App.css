@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: rgb(165, 165, 165);
+}
+
+.header {
+    height: 100px;
+    color: rgb(187, 31, 31);
+    background-color: rgb(73, 70, 70);
+}
+
+.headerImg {
+    width: 150px;
+    height: 100px;
+}
+
+.title {
+    position: relative;
+    bottom: 95px;
+    left: 200px;
+}
+
+.grid-container {
+    margin: 50px 300px;
+}
+
+.name-grid {
+    position: relative;
+    top: -717px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 300px);
+    grid-gap: 25px;
+}
+
+.names {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-weight: 200;
+    font-size: 25px;
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: rgba(0, 0, 255, .6);
+}
+
+.picture-grid {
+    margin-top: 20px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 25px;
+}
+
+.photos {
+    object-fit: cover;
+    width: 250px;
+    height: 300px;
+}
