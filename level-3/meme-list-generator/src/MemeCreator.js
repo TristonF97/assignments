@@ -3,19 +3,16 @@ import Meme from "./Meme.js"
 import MemeForm from "./MemeForm.js"
 
 class MemeCreator extends React.Component {
-    constructor() {
-        super()
-        this.state= {
+  
+        state= {
             topLine: "",
             memeImage: "http://i.imgflip.com/1bij.jpg",
             bottomLine: "",
             imgs : [],
             memeList: []
         }
-        this.handleClick = this.handleClick.bind(this)
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-    }
+        
+    
 
     componentDidMount(){
         fetch("https://api.imgflip.com/get_memes")
@@ -28,7 +25,7 @@ class MemeCreator extends React.Component {
         })
     };
     
-    handleClick(){
+    handleClick = () => {
         const randNum = Math.floor(Math.random() * this.state.imgs.length);
         const randomImg = this.state.imgs[randNum].url;
         this.setState({
@@ -36,20 +33,22 @@ class MemeCreator extends React.Component {
         })
     }
 
-    handleChange(e) {
+    handleChange =(e) => {
         this.setState({
             [e.target.name]: e.target.value
         })
     }
 
-    handleSubmit(e) {
+    handleSubmit =(e)=> {
       e.preventDefault()
-      const newMeme = [...this.state.memeList]
+     // const newMeme = [...this.state.memeList]
 
-      newMeme.push(this.state)
-      this.setState({
-          memeList: newMeme
-      })
+     // newMeme.push(this.state)
+        let {topLine, bottomLine, memeImage} = this.state
+        const newMeme = { topLine, bottomLine, memeImage }
+      this.setState(prev => ({
+          memeList: [...prev.memeList, newMeme]
+      }))
 
       Array.from(document.querySelectorAll("input")).forEach(
         input => (input.value = "")
@@ -58,10 +57,6 @@ class MemeCreator extends React.Component {
         topLine: "",
         bottomLine: ""
      })
-    }
-
-    handleEdit = () => {
-        
     }
 
     handleDelete = itemId => {
