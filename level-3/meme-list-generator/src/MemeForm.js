@@ -13,14 +13,6 @@ function MemeForm(props) {
                     placeholder="Top Text"
                     />
 
-                    <br /> 
-
-                    <input
-                        type="image"
-                        name="Url"
-                        value={props.Url}
-                    />
-
                     <br />
                     
                     <input
@@ -35,10 +27,6 @@ function MemeForm(props) {
 
                     <button>Submit Meme</button>
                 </form>
-
-                <h1> {props.state.topLine} </h1>
-
-                <h1> {props.state.bottomLine} </h1>
 
             </div>
     )
