@@ -78,19 +78,19 @@ class MemeCreator extends React.Component {
         })
     }
 
-     handleSave(e){
-         e.preventDefault()
-        let newMeme = {topLine:this.state.topLine, bottomLine:this.state.bottomLine, memeImage:this.state.memeImage}
-        
+    handleSave(e){
+        e.preventDefault()
+       let newMeme = {topLine:this.state.topLine, bottomLine:this.state.bottomLine, memeImage:this.state.memeImage}
+       
 
-        this.setState((prevState) => {
-            let newMemeList = prevState.memeList
-            newMemeList.splice(prevState.memeIndex,1, newMeme)
-            return { isEditing: false, memeList: [...newMemeList],topLine: "", bottomLine: ""}
-            
-        })
-        
-     }
+       this.setState((prevState) => {
+           let newMemeList = prevState.memeList
+           newMemeList.splice(prevState.memeIndex,1, newMeme)
+           return { isEditing: false, memeList: [...newMemeList],topLine: "", bottomLine: ""}
+           
+       })
+       
+    }
 
     handleDelete(index) {
         const list = this.state.memeList
