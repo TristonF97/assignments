@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(53, 92, 92);
+}
+
+.website-title {
+    text-align: center;
+    height: 10%;
+    line-height: 50px;
+    background-color: rgb(135, 189, 189);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-color: rgb(99, 151, 151);
+}
+
+.page-title {
+    text-align: center;
+    height: 10%;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: rgb(66, 116, 116);
+}
+
+.search-bar {
+    height: 25px;
+}
+
+.search-button {
+    width: 75px;
+    height: 31px;
+}
+
+.form {
+    text-align: center;
+    margin: 50px;
+}
+
+.about-summary {
+    text-align: center;
+    margin: 2% 15%;
+    height: 50%;
+    background-color: rgb(33, 73, 73);
+}
+
+.contact-summary {
+    text-align: center;
+    margin: 2% 25%;
+    height: 50%;
+    background-color: rgb(33, 73, 73);
+}
+
+.contact-form {
+    margin: auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+    width: 25%;
+}
+
+.text-area {
+    grid-column: 1 / -1;
+    height: 100px;
+}
+
+.contact-button {
+    grid-column: 1 / -1;
+    height: 25px;
+}

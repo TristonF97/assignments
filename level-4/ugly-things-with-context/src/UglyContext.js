@@ -5,12 +5,12 @@ const {Provider, Consumer} = React.createContext()
 class UglyContextProvider extends Component {
     constructor() {
         super()
-        state = {
+        this.state = {
             uglyThingsList: []
         }
     }
 
-    submitData = (inputs) => {
+    handleSubmit = (inputs) => {
         axios.post("https://api.vschool.io/tristonfrischknecht/thing", inputs)
         .then(response => {
             this.setState(prevState => {
@@ -20,19 +20,19 @@ class UglyContextProvider extends Component {
         .catch(error => console.log(error))
     }
 
-    // componentDidMount = () => {
-    //     console.log("Its working")
-    //     axios.get("https://api.vschool.io/tristonfrischknecht/thing")
-    //     .then(response => this.setState({uglyThingsList: response.data}))
-    //     .catch(error => console.log(error))
-    // }
-
-    // handleSubmit = (e) => {
-    //     e.preventDefault()
-    //     this.setState((prevState) => {
-    //         return {uglyThingsList: [...prevState.uglyThingsList]}
-    //     })
-    // }
+    handleEdit = (passedThing, newEdit) => {
+        axios.put(`https://api.vschool.io/tristonfrischknecht/thing/${passedThing._id}`, newEdit)
+        let editArray = this.state.uglyThingsList.map(thing => {
+            if(passedThing._id === thing._id) {
+                thing.title = newEdit.title
+                thing.description = newEdit.description
+                return thing
+            } else {
+                return thing
+            }
+        })
+        this.setState(prevState => ({...prevState, uglyThingsList: editArray}))
+    }
 
     getDataRequest = () => {
         console.log("Hello")
@@ -41,21 +41,20 @@ class UglyContextProvider extends Component {
         .catch(error => console.log(error))
     }
 
-    handleEdit = () => {
-
-    }
-
-    handleDelete = (index) => {
-        const list = this.state.uglyThingsList
-        list.splice(index, 1)
-        this.setState({list})
+    handleDelete = (thingId) => {
+        axios.delete(`https://api.vschool.io/tristonfrischknecht/thing/${thingId._id}`)
+        let deleteArray =this.state.uglyThingsList.filter(thing => thingId !== thing._id)
+        this.setState(prevState => ({...prevState, uglyThingsList: deleteArray }))
     }
 
     render() {
         return (
             <Provider value={{uglythings: this.state.uglyThingsList,
-                submission: this.submitData,
-                getInfo: this.getDataRequest}}>
+                handleSubmit: this.handleSubmit,
+                getInfo: this.getDataRequest,
+                handleEdit: this.handleEdit,
+                handleDelete: this.handleDelete
+                }}>
                 {this.props.children}
             </Provider>
         )
@@ -63,70 +62,3 @@ class UglyContextProvider extends Component {
 }
 
 export {UglyContextProvider, Consumer as UglyContextConsumer}
-
-// import React from "react" 
-// import axios from "axios"
-// const {Provider, Consumer} = React.createContext()
-
-// class UglyThingsProvider extends React.Component{
-//     constructor(){
-//         super()
-//     this.state={
-//          uglyThingsList: []
-//     }
-//     this.uglyListVariable = "https://api.vschool.io/tristonfrischknecht/thing"
-// }
-//     submitData=(inputs)=>{
-//         axios.post(this.uglyListVariable, inputs)
-//         .then(res => {
-//             this.setState(prevState =>{
-//                 return {
-//                     uglyThingsList: [...prevState.uglyThingsList, res.data]
-//                 }
-//             }
-//                 )
-//         }
-            
-//             )
-//         .catch(err => console.log(err))
-//         }
-    
-//     getDataRequest =() =>{
-//         console.log('hello')
-//             axios.get(this.uglyListVariable)
-//             .then(res => this.setState({uglythingsList: res.data}))
-//             .catch(err => console.log(err))
-//         }
-
-//         // editButton = (passedThing, stringOne, stringTwo) => {
-//         //     let newArr = this.state.uglyThingsList.map(thing => {
-//         //         if(passedThing.id === thing.id){
-//         //             // passedThing.topText = stringOne
-//         //             // passedThing.bottomText = stringTwo
-//         //             return passedThing
-//         //         } else{
-//         //             return thing //not sure what to return 
-//         //         }
-//         //     })
-//         //     this.setState(prevState => ({...prevState, uglyThingsList: newArr}))
-
-//         // }
-//         // deleteButton = (thingId) => {
-//         //     let newArray = this.state.uglyThingsList.filter(thing => thingId !== thing.id)
-//         //     this.setState(prevState => ({...prevState, uglyThingsList: newArray}))   
-//         // }
-
-//     render(){
-//         return(
-//             <Provider value={{uglythings: this.state.uglyThingsList,
-//                 submission: this.submitData,
-//                 getInfo: this.getDataRequest
-//             }}
-//             >
-//                 {this.props.children}
-//             </Provider>
-//         )
-//     }
-// }
-
-// export {UglyThingsProvider, Consumer as UglyThingsConsumer}

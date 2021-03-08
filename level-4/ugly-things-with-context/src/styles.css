@@ -5,6 +5,7 @@
 
 body {
     background-color: #606060FF;
+    text-align: center;
 }
 
 .header {
@@ -37,20 +38,40 @@ body {
 }
 
 .img-title {
+    text-align: center;
     margin: 5px;
 }
 
 .img-description {
+    text-align: center;
     margin: 5px;
 }
 
 .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     object-fit: cover;
-    width: 300px;
+    width: 400px;
     height: 300px;
 }
 
 .card-btn {
     margin: 5px 20px;
     width: 100px;
+}
+
+.edit-input {
+    text-align: center;
+    margin: 5px;
+}
+
+.edit-delete {
+    display: inline;
+    width: 5%;
+}
+
+hr {
+    margin: 15px 400px;
 }
