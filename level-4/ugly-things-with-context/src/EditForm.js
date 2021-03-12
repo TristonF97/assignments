@@ -6,6 +6,7 @@ class EditForm extends React.Component {
         title: "",
         description: ""
     }
+    
     handleChange = (e) => {
         const {name, value} = e.target
         this.setState({[name]: value})

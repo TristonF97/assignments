@@ -2,13 +2,13 @@ import React from "react"
 
 import "./styles.css"
 import Form from "./Form"
-import UglyThingsMap from "./UglyThingsMap"
+import UglyThings from "./UglyThings"
 
 function App() {
     return (
         <div>
             <Form />
-            <UglyThingsMap />
+            <UglyThings />
         </div>
     )
 }

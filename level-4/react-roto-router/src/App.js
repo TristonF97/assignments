@@ -9,14 +9,14 @@ function App() {
     return(
         <div>
             <nav className="navbar">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/services">Services</Link>
             </nav>
 
             <main className="main">
                 <Switch>
-                    <Route exact path="/home">
+                    <Route exact path="/">
                         <Home />
                     </Route>
 

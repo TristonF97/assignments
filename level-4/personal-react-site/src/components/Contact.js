@@ -3,13 +3,13 @@ import React from "react"
 function Contact() {
     return (
         <div>
-            <h1 className="page-title">Contact Page!</h1>
+            <h1 className="contact-page-title">Contact Us!</h1>
 
-            <h3 className="contact-summary">
+            <h2 className="contact-summary">
                 Want to tell us your thoughts? Curious about joining the team?
-                Well fill out the form below and we'll get back to you as soon
+                Fill out the form below and we'll get back to you as soon
                 as we can!
-            </h3>
+            </h2>
 
             <form className="contact-form">
                 <input placeholder="First Name"></input>

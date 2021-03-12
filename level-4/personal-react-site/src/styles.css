@@ -1,17 +1,22 @@
-
 * {
     margin: 0;
 }
 
 body {
-    background-color: rgb(53, 92, 92);
+    background-image: url("https://cdn.hipwallpaper.com/i/1/96/uglyvH.jpg");
+    background-repeat: no-repeat;
+}
+
+.title {
+    display: inline;
+    background-color: rgba(245, 245, 220, 0.521);
 }
 
 .website-title {
     text-align: center;
     height: 10%;
     line-height: 50px;
-    background-color: rgb(135, 189, 189);
+    background-color: rgba(245, 245, 220, 0.521);
 }
 
 .navbar {
@@ -20,52 +25,88 @@ body {
     height: 30px;
     line-height: 30px;
     vertical-align: middle;
-    background-color: rgb(99, 151, 151);
+    background-color: rgba(245, 245, 220, 0.521);
 }
 
-.page-title {
+.spell-page-title {
+    text-align: center;
+    padding: 1%;
+    height: 10%;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.home-summary {
+    text-align: center;
+    margin: 15% 20%;
+    padding: 2%;
+    background-color: rgba(245, 245, 220, 0.521);
+}
+
+.spell-summary {
+    text-align: center;
+    margin: 5% 25%;
+    height: 50%;
+}
+
+.spell-container {
+    background: url("https://i.pinimg.com/originals/7d/0a/24/7d0a243b0ab7012dfd45e7584d919009.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.list-of-spells {
+    margin: 2%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.spell-list {
+    margin: 2%;
+    text-align: center;
+    text-decoration: underline;
+    width: 90%;
+}
+
+.spell-info {
+    margin: .5%;
+    display: block;
+    text-align: center;
+}
+
+.spell-descritpion {
+    margin: .5%;
+}
+
+.higher-level {
+    margin: .5% .5% 10% .5%;
+    
+}
+
+.contact-page-title {
     text-align: center;
     height: 10%;
     line-height: 50px;
     vertical-align: middle;
-    background-color: rgb(66, 116, 116);
-}
-
-.search-bar {
-    height: 25px;
-}
-
-.search-button {
-    width: 75px;
-    height: 31px;
-}
-
-.form {
-    text-align: center;
-    margin: 50px;
-}
-
-.about-summary {
-    text-align: center;
-    margin: 2% 15%;
-    height: 50%;
-    background-color: rgb(33, 73, 73);
+    background-color: rgba(214, 214, 181, 0.521);
 }
 
 .contact-summary {
     text-align: center;
     margin: 2% 25%;
     height: 50%;
-    background-color: rgb(33, 73, 73);
+    background-color: rgba(245, 245, 220, 0.521);
 }
 
 .contact-form {
     margin: auto;
     margin-top: 15px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-gap: 5px;
-    width: 25%;
+    width: 50%;
 }
 
 .text-area {
@@ -76,4 +117,42 @@ body {
 .contact-button {
     grid-column: 1 / -1;
     height: 25px;
+}
+
+@media only screen and (min-width: 681px) {
+
+    .list-of-spells {
+        margin: 2%;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .spell-list {
+        margin: 2%;
+        text-align: center;
+        width: 90%;
+    }
+
+    .spell-info {
+        margin: .5%;
+        display: inline;
+    }
+
+    .spell-descritpion {
+        margin: .5%;
+    }
+
+    .higher-level {
+        margin: .5% .5% 3% .5%;
+        
+    }
+    
+    .contact-form {
+        margin: auto;
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 5px;
+        width: 30%;
+    }
 }

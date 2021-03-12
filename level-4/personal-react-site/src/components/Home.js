@@ -1,23 +1,13 @@
-import React, {useState, useEffect} from "react"
-
-import Form from "./Form"
+import React from "react"
 
 function Home() {
-    const [ load ] = useState(`http://www.dnd5eapi.co/`)
-    console.log(load)
-    
-    useEffect(() => {
-        fetch(`http://www.dnd5eapi.co/`)
-            .then(res => res.json())
-            .then(data => console.log(data))
-            .catch(error => console.log(error))
-    })
-
     return (
         <div>
-            <h1 className="page-title">Home Page!</h1>
-
-            <Form />
+            <h2 className="home-summary" >Welcome to a Dungeons & Dragons Spell SRD (System 
+                Reference Document). This site is here to help you find any and all base 5th 
+                edition spells you're looking for easily, and with all the most essential 
+                information regarding each spell.
+            </h2>
         </div>
     )
 }
