@@ -11,8 +11,8 @@ export default function Bounty(props) {
                 <span className="name">{ firstName }</span>
                 <span className="name"> { lastName }</span>
                 { alive === true ? <h3>Status: Alive </h3> : <h3>Status: Terminated </h3>}
-                <h3>Alignment: { type }</h3>
-                <h3>Reward: { amount }</h3>
+                <h3 className="alignment">Alignment: { type }</h3>
+                <h3 className="reward">Reward: { amount }</h3>
                 <button
                 className="delete-button"
                 onClick={() => props.deleteBounty(_id)}>Delete</button>
