@@ -10,7 +10,15 @@ h1 {
     margin: 5px;
 }
 
+h4 {
+    margin: 5px;
+}
+
 p {
+    margin: 5px;
+}
+
+select {
     margin: 5px;
 }
 
@@ -54,4 +62,8 @@ button {
     border: 1px solid #333;
     padding: 10px;
     margin: 5px;
+}
+
+.filter-form {
+    width: 200px;
 }
