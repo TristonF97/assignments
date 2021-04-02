@@ -50,7 +50,7 @@ export default function App() {
             {bounties.map(bounty => 
                 <Bounty 
                     {...bounty} 
-                    key={bounty.lastName}
+                    key={bounty._id}
                     deleteBounty={deleteBounty}
                     editBounty={editBounty}
                 />)}
