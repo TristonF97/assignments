@@ -8,7 +8,7 @@ const expressJwt = require('express-jwt')
 app.use(express.json())
 app.use(morgan("dev"))
 
-mongoose.connect("mongodb://localhost:27017/moviesdb",
+mongoose.connect("mongodb://localhost:27017/rock-the-vote",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -19,14 +19,17 @@ mongoose.connect("mongodb://localhost:27017/moviesdb",
 )
 
 // Routes
+app.use('/auth', require('./routes/authRouter.js'))
 app.use('/api', expressJwt({ secret: process.env.SECRET, algorithms: ['HS256'] }))
+app.use('/api/issue', require('./routes/issueRouter.js'))
+app.use('/api/comment', require('./routes/commentRouter.js'))
 
 // Error handling
 app.use((err, req, res, next) => {
 	console.log(err)
-    if(err.name === "UnauthrerizedError") {
+    if(err.name === "UnauthorizedError"){
         res.status(err.status)
-    }  
+    }
 	return res.send({errMsg: err.message})
 }) 
 
