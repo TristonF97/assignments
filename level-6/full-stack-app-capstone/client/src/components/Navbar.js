@@ -9,6 +9,7 @@ export default function Navbar(props){
             { token && <Link to="/public">Public</Link> }
             { token && <Link to="/classes">Classes</Link> }
             { token && <Link to="/features">Features</Link> }
+            { token && <Link to="/equipment">Equipment</Link> }
             { token && <Link to="/spells">Spells</Link> }
         </div>
     )

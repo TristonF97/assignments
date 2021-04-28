@@ -7,7 +7,7 @@ export default function CharList(props){
 
   return (
     <div className="char-list">
-        {/* { characters.map(character => <Char {...character} key={character._id}/>) } */}
+        { characters.map(character => <Char {...character} key={character._id}/>) }
     </div>
   )
 }

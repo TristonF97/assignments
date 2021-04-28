@@ -20,7 +20,8 @@ export default function FeatureDetail(props){
     return (
         <div>
             {/* Doesn't work */}
-            {/* <p>Class" {featureResults.class.map(charclass =>
+            {/* <p>Class: {featureResults.class}</p> */}
+            {/* <p>Class: {featureResults.class.map(charclass =>
                 <p>
                     {charclass.name}
                 </p>

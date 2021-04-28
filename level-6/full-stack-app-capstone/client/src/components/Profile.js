@@ -22,7 +22,7 @@ export default function Profile(props){
         <h3>Make a new Character</h3>
         <CharForm addCharacter={addCharacter}/>
         <h3>Your Characters</h3>
-        <CharList characterss={characters}/>
+        <CharList characters={characters}/>
       </div>
     )
   }

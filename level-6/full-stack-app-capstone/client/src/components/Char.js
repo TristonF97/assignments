@@ -2,14 +2,15 @@ import React from 'react'
 
 export default function Char(props){
 
-  const { name, charclass, race, background } = props
+  const { name, charclass, race, background, alignment } = props
 
   return (
     <div className="char">
-      <h1>{ name }</h1>
-      <h3>{ charclass }</h3>
-      <h3>{ race }</h3>
-      <h3>{ background }</h3>
+      <h1>Name: { name }</h1>
+      <h3>Class: { charclass }</h3>
+      <h3>Race: { race }</h3>
+      <h3>Background: { background }</h3>
+      <h3>Alignment: {alignment}</h3>
     </div>
   )
 }

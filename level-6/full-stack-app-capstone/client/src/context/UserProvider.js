@@ -99,6 +99,8 @@ export default function UserProvider(props){
             .catch(err => console.log(err.response.data.errMsg))
     }
 
+    // Need function and button to delete characters
+
     return (
         <UserContext.Provider
             value={{
